@@ -1,0 +1,251 @@
+.Section-Two-One {
+    display: flex;
+    align-items: center;
+    background: #30314b;
+    border-radius: 0 100px 0 100px;
+    height: 45vh;
+    width: 100%;
+    overflow-y: visible;  
+    z-index: 1;
+
+}
+
+.svg-two {
+    position: absolute;
+    width: 80%;
+    height: 45vh;
+    overflow-y: hidden; 
+    border-radius: 0 0 0 100px;
+    z-index: 2;
+}
+
+.svg-two img {
+    position: relative;
+    width: 80%;
+    top: -470px;
+    left: -200px;
+}
+
+.section-two-content {
+    width: 86%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+}
+
+.svg-image {
+    position: relative;
+    top: 10px;
+    z-index: 4;
+    overflow: visible;
+}
+
+.text-two-content {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    gap: 1rem;
+    z-index: 5;
+}
+
+.text-two-content h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.text-two-content p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    letter-spacing: 0.07rem;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .svg-two img {
+        position: relative;
+        width: 100%;
+        top: -350px;
+        left: -200px;
+    }
+    .svg-image {
+        top: 0;
+    }
+
+    .svg-image img {
+        width: 500px;
+    }
+    .text-two-content {
+        margin-left: 0;
+        width: clamp(35ch, 50%, 75ch);
+    }
+
+    .text-two-content h3 {
+        font-size: 1.37rem;
+    }
+
+    .text-two-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    
+    .Section-Two-One {
+        height: 40vh;
+
+    }
+    
+    .svg-two {
+        height: 40vh;
+
+    }
+    .svg-two img {
+        top: -350px;
+        left: -200px;
+    }
+
+    .svg-image img {
+        width: 450px;
+    }
+    .text-two-content {
+        margin-left: 0;
+        width: clamp(35ch, 50%, 75ch);
+    }
+
+    .text-two-content h3 {
+        font-size: 1rem;
+    }
+
+    .text-two-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-two-content{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Section-Two-One {
+        height: 50vh;
+        margin-top: 15rem;
+    }
+    
+    .svg-two {
+        height: 50vh;
+
+    }
+    .svg-two img {
+        top: -250px;
+        left: -50px;
+    }
+    .svg-image{
+        top: -270px;
+    }
+    .svg-image img {
+        width: 450px;
+    }
+    .text-two-content {
+        margin-left: 0;
+        margin-top: -280px;
+        width: clamp(45ch, 50%, 85ch);
+        align-items: center;
+    }
+
+    .text-two-content h3 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .text-two-content p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section-two-content{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Section-Two-One {
+        height: 50vh;
+        margin-top: 15rem;
+    }
+    
+    .svg-two {
+        height: 50vh;
+        width: 100%;
+        border-radius: 0 100px 0 0;
+        overflow-x: hidden;
+
+    }
+    .svg-two img {
+        top: -200px;
+        left: -30px;
+        width: 500px;
+    }
+    .svg-image{
+        top: -270px;
+    }
+    .svg-image img {
+        width: 310px;
+    }
+    .text-two-content {
+        margin-left: 0;
+        margin-top: -280px;
+        width: clamp(35ch, 50%, 75ch);
+        align-items: center;
+    }
+
+    .text-two-content h3 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .text-two-content p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .Section-Two-One {
+        height: 60vh;
+    }
+    
+    .svg-two {
+        height: 60vh;
+        border-radius: 0 100px 0 0;
+
+    }
+    .svg-two img{
+        left: -100px;
+    }
+    .svg-image{
+        top: -230px;
+        overflow-x: hidden;
+    }
+    .svg-image img {
+        width: 303px;
+    }
+    .text-two-content {
+        margin-top: -240px;
+        width: clamp(25ch, 50%, 35ch);
+    }
+
+    .text-two-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .text-two-content p {
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+}

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    border-radius: 0 0 0 100px;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,131,108,1) 0%, rgba(255,84,81,1) 50%, rgba(223,31,45,1) 100%);
+    z-index: 1;
+}
+
+.svg-background{
+    position: absolute;
+    top: -230px;
+    left: -200px;
+    width: 170%;
+    height: 160%;
+    background: url('../assets/bg-pattern-intro-desktop.svg') no-repeat center center;
+    background-size: cover;
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10rem;
+}
+
+.Navbar {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+    width: 80%;
+    gap: 3rem;
+    z-index: 4;
+}
+.Navbar .side1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    z-index: 5;
+}
+
+.Nav-links ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+
+}
+.Nav-links li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.side1 .side2{
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+    z-index: 6;
+}
+.side1 .side2 button{
+    font-size: 16px;
+    padding-inline: 1rem;
+    width: 6rem;
+    background: none;
+    border: none;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    padding-block: 0.5rem;
+}
+.Navbar .side1 .side2 button:hover{
+    width: 6rem;
+    background: #ffffff;
+    color: rgba(255,84,81,1);
+    border-radius: 1.5rem;
+}
+.ham{
+    display: none;
+}
+.Hero {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    color: #ffffff;
+    min-width: 65%;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+}
+.Hero h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.Hero .btn-hero{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.Hero .btn-hero button{
+    padding-inline: 0.5rem;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    padding-block: 0.5rem;
+}
+.Hero .btn-hero button:hover{
+    background: #ffffff;
+    color: rgba(255,84,81,1);
+    border-radius: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .svg-background {
+        position: absolute;
+        top: -180px;
+        left: -200px;
+        width: 200%;
+        height: 160%;
+        background: url('../assets/bg-pattern-intro-mobile.svg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .Hero {
+        z-index: 3;
+    }
+
+    .Hero h1 {
+        font-size: 2.9rem;
+        font-weight: 600;
+    }
+
+    .Navbar {
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Navbar .side1 {
+        display: none;
+    }
+
+    .Navbar .side2 {
+        display: none;
+    }
+
+    .ham {
+        display: flex;
+        height: 1rem;
+        align-items: center;
+    }
+
+    .side1.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 40%;
+        height: 50%;
+        background-color: white;
+        z-index: 6;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .side1.show-menu nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .side1.show-menu nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .side1.show-menu nav ul li a {
+        color: #333;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        transition: color 0.3s;
+    }
+
+    .side1.show-menu nav ul li a:hover {
+        color: #ff6347;
+    }
+
+    .side1.show-menu .side2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .side1.show-menu .side2 button {
+        display: block;
+        width: 60%; 
+        max-width: 200px; 
+        color: #333;
+        border: none;
+        padding: 0.75rem 1rem;
+
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.8s;
+        text-align: center;
+    }
+
+    .side1.show-menu .side2 button:hover {
+        background-color: #ff6347;
+        color: #ffffff;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .side1.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        z-index: 6;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .Hero h1{
+        font-size: 2rem;
+    }
+    .Hero p {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .side1.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        z-index: 6;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .Hero h1{
+        font-size: 2rem;
+    }
+    .Hero p {
+        font-size: 0.78rem;
+    }
+}
