@@ -14,7 +14,7 @@ This project is a responsive landing page built using React and Vite with custom
 ## Technologies Used
 - React: Frontend library for building the user interface.
 - Vite: Next-generation frontend tooling for development and build.
-- CSS: Custom styles written in pure CSS for responsive layouts.
+- CSS: Custom styles written in pure CSS for responsive layouts
 ## Installation
 
 1. Clone the repository:
