@@ -8,7 +8,7 @@ This project is a responsive landing page built using React and Vite with custom
 - Modern UI: Utilizes a clean and minimalist design.
 - Built with React: Ensures a dynamic and flexible UI with component-based architecture.
 - Vite for Development: Fast development and build tool for optimized React applications.
-- Custom CSS: Styles crafted with standard CSS and media queries.
+- Custom CSS: Styles crafted with standard CSS and media queries
 
 
 ## Technologies Used
